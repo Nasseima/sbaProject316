@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <main></main>
+    <div class="header">
+        <div>
+            <h1 class="name">Island hub</h1>
+        </div>
+        <div class="info">
+        <a class="home" href="" target="_blank">Home</a>
+        <a class="contact" href="" target="_blank" >Contact</a>
+        <a class="about" href="" target="_blank" >About</a>
+        </div>
+    </div>
+
+    <div class="maincontainer">
+    <div class="thecard">
+    <div class="front"> 
+        <img width="150%" height="150%" src="uncomfort.png" alt="">
+    </div>
+    <div class="back">
+        <div>
+            <h1> Title </h1>
+            <p> Uncomfort To Lies</p>
+            <h2> Genre </h2>
+            <p>Dancehall</p>
+            <h2> Artist Info </h2>
+            <p> Jamaican dancehall DJ Akeeme Campbell (aka Chronic Law) is incredibly prolific, releasing numerous singles every year.
+                Campbell was born in St. Thomas, Jamaica, although he moved to Palm Beach, Florida, at a young age. 
+            </p>
+                
+            <div>
+            <audio controls class="songbtn">
+                <source class="audio" src="audio1.mp3" type="audio/mp3">
+            </audio>
+             <button class="playPauseBTN" onclick="playPause()"> Play &#9658; </button> 
+            &nbsp;
+            &nbsp;
+            <button onclick="stop()"> Stop &#9611; </button>
+            </div> 
+    </div>
+    </div>
+
+    
+    </div>
+
+    
+
+    
     <script src="app.js"></script>
 </body>
 </html>

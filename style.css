@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+}
+.header{
+    display: flex;
+    overflow: hidden;
+    background-image: url("playlistimg.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height:300px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position:absolute ;
+    width: 100%;
+    height: 100%; 
+    backface-visibility: hidden;
+    background: yellow;
+    color: grey;
+}
+.back{
+    position:absolute ;
+    width: 100%;
+    height: 100%; 
+    backface-visibility: hidden;
+    background: white;
+    color: grey;
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+        height:400px;
+    }
+} 
+.info{
+    margin-top: 170px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 80px;
+}
+.home, .about, .contact{
+    color: white;
+    font-size: 20px;
+}
+.home:hover, .about:hover, .contact:hover{
+    background-color: blue;
+}
+.name{
+    color: white;
+    font-size: 50px;
+}
+button{
+    padding: 10px 25px;
+    font-size: 22px;
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right bottom, #273c75, #079992);
+    color: #fff;
+    border-radius: 5px;
+    border: 0px;
+    height: 60px;
+}

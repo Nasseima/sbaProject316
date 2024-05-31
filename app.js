@@ -1,14 +1,43 @@
-//Select the main tag from html
-const main = document.querySelector("main")
-console.log(main)
-//Add images in an array in order to iterate over.
-let imgArr =[
-    {name:"Pikachu", URI:"https://plus.unsplash.com/premium_photo-1674815482505-c65d12b10883?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2FsbGFyeSUyMHBhaW50aW5nfGVufDB8fDB8fHww"}
-]
-// the for each is used to iterate over each image
-imgArr.forEach(element => {
-    const el = document.createElement('img')
-// grab the image.
-    el.src = element.URI
-    main.appendChild(el)
-});
+// const audio = new Audio ();
+// audio.src = "Chronic Law - Uncomfort To Lies _ Audio (256).mp3"
+// const button = document.querySelector("button");
+
+// button.forEach(button =>{
+//     button.addEventlistener("click", () => {
+//         audio.play();
+//     });
+// });
+//Code from html added here !!
+//<button onmousedown="audio.play()" onmouseleave="audio.stop()" class="btn"><img width="50px" height="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtsKxTUuqOwPPgUvMll3w99Gd8DcS7uv-og&s" alt=""> </button>
+
+const audio = document.getElementsByClassName('songbtn');
+const playPauseBTN = document.querySelector ('.playPauseBTN');
+let count = 0;
+
+console.dir(audio)
+
+function playPause(){
+    if (count == 0) {
+        count = 1;
+        audio.play;
+        playPauseBTN.innerHTML = "Pause &#9208;";
+    }else{
+        count = 0;
+        audio.pause;
+        playPauseBTN.innerHTML = "Play &#9658;";
+    }
+}
+function stop(){
+    playPause();
+    audio.pause();
+    audio.currentTime = 0;
+    console.log(audio.currentTime)
+    playPauseBTN.innerHTML = "Play &#9658;";
+}
+
+
+// const card = document.querySelector(".back")
+// const audio1 = document.querySelector(".songbtn")
+// card.append(audio1)
+
+// console.log(card, audio1)
