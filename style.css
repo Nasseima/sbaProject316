@@ -1,5 +1,6 @@
 *{
     margin: 0;
+
 }
 .header{
     display: flex;
@@ -14,6 +15,7 @@
     align-items: center;
     
 }
+
 
 .maincontainer{
     position: relative;
@@ -50,12 +52,7 @@
     transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 600px) {
-    .header {
-        width: 100%;
-        height:400px;
-    }
-} 
+
 .info{
     margin-top: 170px;
     display: flex;
@@ -86,4 +83,39 @@ button{
     border-radius: 5px;
     border: 0px;
     height: 60px;
+}
+.formContainer{
+    display: flex;
+    background-color: aqua;
+    margin-top: 160px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.submitbtn{
+    display: flex;
+    border-radius: 30px;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.submit{
+    align-items: center;
+    text-align: center;
+    
+}
+@media screen and (max-width: 600px) {
+    .header .formContainer{
+        width: 100%;
+        height:100px;
+    }
+} 
+input{
+    width: 600px;
+    height: 20px;
+    border-radius: 10px;
+}
+h4{
+    margin-top: 10px;
 }

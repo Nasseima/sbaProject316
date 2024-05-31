@@ -41,3 +41,6 @@ function stop(){
 // card.append(audio1)
 
 // console.log(card, audio1)
+
+let name = document.getElementById('name');
+console.log(name)
