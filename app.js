@@ -10,7 +10,7 @@
 //Code from html added here !!
 //<button onmousedown="audio.play()" onmouseleave="audio.stop()" class="btn"><img width="50px" height="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgtsKxTUuqOwPPgUvMll3w99Gd8DcS7uv-og&s" alt=""> </button>
 
-const audio = document.getElementsByClassName('songbtn');
+const audio = document.querySelector('.songbtn');
 const playPauseBTN = document.querySelector ('.playPauseBTN');
 let count = 0;
 
@@ -19,11 +19,11 @@ console.dir(audio)
 function playPause(){
     if (count == 0) {
         count = 1;
-        audio.play;
+        audio.play();
         playPauseBTN.innerHTML = "Pause &#9208;";
     }else{
         count = 0;
-        audio.pause;
+        audio.pause();
         playPauseBTN.innerHTML = "Play &#9658;";
     }
 }
