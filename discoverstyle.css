@@ -1,0 +1,6 @@
+.container{
+    background-image: url("musicbkg.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100% 100%;
+}

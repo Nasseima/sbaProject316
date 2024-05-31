@@ -36,11 +36,11 @@ function stop(){
 }
 
 
-// const card = document.querySelector(".back")
-// const audio1 = document.querySelector(".songbtn")
-// card.append(audio1)
+const card = document.querySelector(".back")
+const audio1 = document.querySelector(".songbtn")
+card.append(audio1)
 
-// console.log(card, audio1)
+console.log(card, audio1)
 
 let name = document.getElementById('name');
 console.log(name)
